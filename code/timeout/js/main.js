@@ -1,15 +1,14 @@
 var main=document.querySelector('main');
 var btn=document.querySelector("button");
 btn.addEventListener( "click", getValue);
-btn.addEventListener("click", zeroToNine )
+btn.addEventListener("click", zeroToNine );
 
 var allInputs=[];
+
 function getValue(){
     var input=document.getElementById("num").value;
-   console.log(input);
-  
   allInputs.push(input);
-  console.log(allInputs);
+   console.log(allInputs);
    main.innerHTML="";
 
 }
@@ -17,45 +16,42 @@ function getValue(){
 function zeroToNine(){
   
 var clavier = `
-<div>
-<button id="zero">0</button>
-<button id="one">1</button>
-<button id="two">2</button>
-<button id="three">3</button>
-<button id="four">4</button>
-<button id="five">5</button>
-<button id="six">6</button>
-<button id="seven">7</button>
-<button id="eight">8</button>
-<button id="nine">9</button>
+<div> <button id="zero" value="0"> 0</button>
+<button id="one" value="1">1</button>
+<button id="two" value="2">2</button>
+<button id="three" value="3">3</button>
+<button id="four" value="4">4</button>
+<button id="five" value="5">5</button>
+<button id="six" value="6">6</button>
+<button id="seven" value="7">7</button>
+<button id="eight" value="8">8</button>
+<button id="nine" value="9">9</button>
 </div>`;
 
 main.innerHTML+= clavier;
-
+var clickedNum=[];
+ var zero =document.querySelector( "#zero").addEventListener('click', function(){clickedNum.push("0");console.log(clickedNum);});
+ var one =document.querySelector("#one").addEventListener('click', function(){clickedNum.push("1");console.log(clickedNum);});
+ var two =document.querySelector("#two").addEventListener('click', function(){clickedNum.push("2");console.log(clickedNum);});
+ var three =document.querySelector( "#three").addEventListener('click', function(){clickedNum.push("3");console.log(clickedNum);});
+ var four =document.querySelector( "#four").addEventListener('click', function(){clickedNum.push("4");console.log(clickedNum);});
+ var five =document.querySelector( "#five").addEventListener('click', function(){clickedNum.push("5");console.log(clickedNum);});
+ var six =document.querySelector( "#six").addEventListener('click', function(){clickedNum.push("6");console.log(clickedNum);});
+ var seven =document.querySelector( "#seven").addEventListener('click', function(){clickedNum.push("7");console.log(clickedNum);});
+ var eight =document.querySelector("#eight").addEventListener('click', function(){clickedNum.push("8");console.log(clickedNum);});
+ var nine =document.querySelector( "#nine").addEventListener('click', function(){clickedNum.push("9");console.log(clickedNum);});
+// do {
+//   for (let i = 0; i < clickedNum.length; i++) {
+//     const element = clickedNum[i];
+//     if (element==allInputs[i]) {
+//       alert("bon code")
+//     }
+//   }
+// } while (clickedNum>=4);
+     
+   
 }
-var clickedNumbers =[];
-var clicked=false;
-var zero = document.querySelector("button","#zero").addEventListener("click",getNumbers);
- var one =document.querySelector("button","#one").addEventListener( "click", getNumbers );;
- var two =document.querySelector("button","#two").addEventListener( "click", getNumbers );;
- var three =document.querySelector("button","#three").addEventListener( "click", getNumbers );;
- var four =document.querySelector("button","#four").addEventListener( "click", getNumbers );;
- var five =document.querySelector("button","#five").addEventListener( "click", getNumbers );;
- var six =document.querySelector("button","#six").addEventListener( "click", getNumbers );;
- var seven =document.querySelector("button","#seven").addEventListener( "click", getNumbers );;
- var eight =document.querySelector("button","#eight").addEventListener( "click", getNumbers );;
- var nine =document.querySelector("button","#nine").addEventListener( "click", getNumbers );;
-
-
-function getNumbers(){
-   clickedNumbers.push("Test");
-
-
-  console.log(clickedNumbers)
-
-
-}
-
+ 
 
 // Définissez un code à 4 chiffres à l'aide d'un input et d'un bouton. Une fois le 
 // bouton cliqué, remplacez l'écran par un clavier contenant des chiffres de 0 à 
