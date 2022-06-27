@@ -1,0 +1,136 @@
+#header-title{
+    
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color:rgb(255, 210, 7);
+    width: auto;
+}
+#container{
+    width: 80%;
+    margin-left: 7%;
+    
+    
+}
+#game-content{
+    display: flex;
+}
+#game {
+    width: 700px;
+    height:500px;
+    background-color: black;
+    position: relative;
+}
+
+#rotative-bar{
+    background-color:rgb(255, 210, 7) ;
+    color: black;
+    width: 100px;
+    height: 30px;
+    
+}
+#sidebar{
+    margin-left: 3%;
+    width: 38%;
+    height: 500px;
+    background-color:rgb(255, 210, 7);
+    
+}
+.score{
+    background-color:rgb(255, 245, 200) ;
+    width: 80%;
+    margin-left: 10%;
+}
+.points{ background-color:rgb(255, 245, 200) ;
+    margin-left: 10%;
+    width: 80%;
+}
+.level{
+    background-color:rgb(255, 245, 200) ;
+    margin-left: 10%;
+    width: 80%;
+}
+.timer{
+    background-color:rgb(255, 245, 200) ;
+    margin-left: 10%;
+    width: 80%;
+}
+.missed-click{
+    background-color:rgb(255, 245, 200) ;
+    margin-left: 10%;
+    width: 80%;
+}
+.high-scores{
+    background-color:rgb(255, 245, 200) ;
+    margin-left: 10%;
+    width: 80%;
+}
+#sidebar h3{
+    margin: 5px;
+    font-weight: lighter;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#sidebar p{
+    margin:  10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(252, 90, 131) ;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+  /* Tooltip container */
+.tooltip {
+    position: relative;
+    /* display: inline-block; */
+    /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  /* Tooltip arrow */
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+ 
