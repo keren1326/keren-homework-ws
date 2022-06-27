@@ -72,10 +72,10 @@ for (let i = 0; i < user.length; i++) {
 //defini la fonction pour commencer le jeu 
  $.container.addEventListener("click",startTheGame)
 
-var startGame=document.querySelector("#gametitle");
+var startGame=document.querySelector("#header-title");
 startGame.addEventListener("mouseover",function(){
 startGame.innerHTML="";
-startGame.innerHTML+=`<h3 id="start">Click to start</h3>`
+startGame.innerHTML+=`<h1 id="start">Click to start</h1>`
  })
  
 var interval = 2;
